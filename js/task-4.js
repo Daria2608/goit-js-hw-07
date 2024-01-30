@@ -9,8 +9,11 @@ function formSubmit(event) {
         alert('All form fields must be filled in')
     }
     else {
-        console.log(`login: ${email}, password: ${password}`)
-    }
-    form.reset();
+        form.reset();
+        result.email = email;
+        result.password = password;
+        console.log(result);
 }
-loginForm.addEventListener('submit', formSubmit)
+}
+ 
+   loginForm.addEventListener('submit', formSubmit)

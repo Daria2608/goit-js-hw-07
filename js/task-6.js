@@ -13,6 +13,7 @@ let boxArray = [];
 
 
 function createBoxes(amount) {
+  box.innerHTML = '';
   for (let i = 0; i < amount; i++) {
     const newBox = document.createElement('div');
     newBox.style.backgroundColor = getRandomHexColor();
